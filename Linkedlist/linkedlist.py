@@ -32,7 +32,9 @@ class LinkedList:
             prev = current
             current = current.next
 
-        print(f"{data} not found in the list3.")
+
+        print(f"{data} not found in the list1.")
+
 
     def getNoOfNodes(self):
         nodeCount = 0
