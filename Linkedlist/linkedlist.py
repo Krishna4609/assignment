@@ -32,7 +32,7 @@ class LinkedList:
             prev = current
             current = current.next
 
-        print(f"{data} not found in the list.")
+        print(f"{data} not found in the list1.")
 
     def display(self):
         current = self.head
