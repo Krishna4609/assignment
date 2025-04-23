@@ -34,6 +34,15 @@ class LinkedList:
 
         print(f"{data} not found in the list3.")
 
+    def getNoOfNodes(self):
+        nodeCount = 0
+        current = self.head
+        while current:
+            nodeCount += 1
+            current = current.next
+
+        return nodeCount
+
     def display(self):
         current = self.head
         while current:
@@ -47,4 +56,5 @@ ll.add(10)
 ll.add(20)
 ll.add(30)
 ll.delete(20)
-ll.display()  # Output: 10 -> 20 -> 30 -> None
+ll.display()
+print(ll.getNoOfNodes())
